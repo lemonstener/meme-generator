@@ -1,0 +1,141 @@
+body{
+    background-image: url('https://wallpapercave.com/wp/wp3263662.jpg');
+    background-size: cover;
+}
+ 
+#page-top{
+    margin-left: 33.3333333333333%;
+    width: 33.3333333333333%;
+    border-radius: 50px;
+    padding: 10px;
+    height: 25%;
+    border: 1px solid gray;
+    background-color: rgba(238, 238, 238, .8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgba(46, 49, 49, 1);
+    font-size: 1em;
+}
+ 
+.inputs{
+    text-align: center;
+    height: 2em;
+    border-radius: 15px;
+    margin-top: 3px;
+    width: 30em;
+}
+ 
+.inputs:focus, #submit-button:focus, .remove-button.focus{
+    outline: none;
+}
+ 
+#submit-button{
+    background-color:#28965A;
+    padding: 5px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em;
+    transition: color .3s;
+}
+ 
+#submit-button:hover{
+    cursor: pointer;
+    color: #FFF05A;
+}
+ 
+#board{
+    width: 90%;
+    position: absolute;
+    left: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    border-radius: 10px;
+}
+ 
+.holder{
+    width: 320px;
+    height: 320px;
+    background-color: rgba(238, 238, 238, .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+ 
+.meme{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8em;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    border: 1px solid gray;
+}
+ 
+.header, .footer{
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    word-wrap: break-word;
+    text-align: center;
+}
+ 
+.header{
+    top: 0;
+}
+ 
+.footer{
+    bottom: 0;
+}
+ 
+.remove-button{
+    text-align: center;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    font-size: 1em;
+    background-color: rgba(220,220,220, .6);
+    display: none;
+}
+ 
+.meme:hover .remove-button{
+    display: inherit;
+    cursor: pointer;
+}
+ 
+@media(max-width: 1250px){
+    .inputs{
+        width: 25em;
+    }
+}
+ 
+@media(max-width: 1000px){
+    .inputs{
+        width: 20em;
+    }
+}
+ 
+@media(max-width: 800px){
+    .inputs{
+        width: 15em;
+    }
+}
+ 
+@media(max-width: 600px){
+    .inputs{
+        width: 10em;
+    }
+}
+
